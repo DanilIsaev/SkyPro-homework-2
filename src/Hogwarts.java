@@ -1,4 +1,6 @@
-public class Hogwarts {
+import java.util.Objects;
+
+public abstract class Hogwarts {
     private String nameStudent;
     private String surnameStudent;
     private int powerWitchcraft;
@@ -42,4 +44,15 @@ public class Hogwarts {
     public void setTransgressionDistance(int transgressionDistance) {
         this.transgressionDistance = transgressionDistance;
     }
+
+    public void tournamentStudent(Hogwarts studentHogwartsRival) {
+        int studentGlassesThis = this.powerWitchcraft + this.transgressionDistance;
+        int studentGlassesOther = studentHogwartsRival.getPowerWitchcraft() + studentHogwartsRival.getTransgressionDistance();
+        if (studentGlassesThis > studentGlassesOther) {
+            System.out.println(this.nameStudent + " " + this.surnameStudent + " обладает бОльшей мощностью магии, чем " + studentHogwartsRival.getNameStudent() + " " + studentHogwartsRival.getSurnameStudent());
+        } else {
+            System.out.println(studentHogwartsRival.getNameStudent() + " " + studentHogwartsRival.getSurnameStudent() + " обладает бОльшей мощностью магии, чем " + this.nameStudent + " " + this.surnameStudent);
+        }
+    }
+
 }

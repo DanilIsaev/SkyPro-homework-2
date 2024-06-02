@@ -46,4 +46,15 @@ public class Gryffindor extends Hogwarts {
                 " храбрость = " + braveryGryffindor +
                 '}';
     }
+
+    public void tournamentStudent(Gryffindor studentRival) {
+        int studentGlassesThis = this.getBraveryGryffindor() + this.getHonorGryffindor() + this.getNobilityGryffindor();
+        int studentGlassesOther = studentRival.getBraveryGryffindor() + studentRival.getHonorGryffindor() + studentRival.getNobilityGryffindor();
+        if (studentGlassesThis > studentGlassesOther) {
+            System.out.println(this.getNameStudent() + " " + this.getSurnameStudent() + " лучший Гриффендорец, чем " + studentRival.getNameStudent() + " " + studentRival.getSurnameStudent());
+        } else {
+            System.out.println(studentRival.getNameStudent() + " " + studentRival.getSurnameStudent() + " лучший Гриффендорец, чем " + this.getNameStudent() + " " + this.getSurnameStudent());
+        }
+
+    }
 }

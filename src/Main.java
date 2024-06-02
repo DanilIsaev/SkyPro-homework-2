@@ -35,5 +35,7 @@ public class Main {
             System.out.println(studentKogtevran[i].toString());
         }
 
+        studentPuffenduy[1].tournamentStudent(studentGriffindor[1]);
+        studentGriffindor[0].tournamentStudent(studentGriffindor[1]);
     }
 }
