@@ -46,4 +46,14 @@ public class Kogtevran extends Hogwarts {
                 " творчество = " + creationStudent +
                 '}';
     }
+    public void tournamentStudent(Kogtevran studentRival) {
+        int studentGlassesThis = this.getMindStudent() + this.getWitStudent() + this.getCreationStudent();
+        int studentGlassesOther = studentRival.getMindStudent() + studentRival.getWitStudent() + studentRival.getCreationStudent();
+        if (studentGlassesThis > studentGlassesOther) {
+            System.out.println(this.getNameStudent() + " " + this.getSurnameStudent() + " лучший Когтеврановец, чем " + studentRival.getNameStudent() + " " + studentRival.getSurnameStudent());
+        } else {
+            System.out.println(studentRival.getNameStudent() + " " + studentRival.getSurnameStudent() + " лучший Когтеврановец, чем " + this.getNameStudent() + " " + this.getSurnameStudent());
+        }
+
+    }
 }

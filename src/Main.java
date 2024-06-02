@@ -37,5 +37,6 @@ public class Main {
 
         studentPuffenduy[1].tournamentStudent(studentGriffindor[1]);
         studentGriffindor[0].tournamentStudent(studentGriffindor[1]);
+        studentKogtevran[0].tournamentStudent(studentKogtevran[1]);
     }
 }

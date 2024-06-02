@@ -46,4 +46,14 @@ public class Puffenduy extends Hogwarts {
                 " честность = " + honestyStudent +
                 '}';
     }
+    public void tournamentStudent(Puffenduy studentRival) {
+        int studentGlassesThis = this.getHardworkingStudent() + this.getHonestyStudent() + this.getLoyaltyStudent();
+        int studentGlassesOther = studentRival.getHardworkingStudent() + studentRival.getHonestyStudent() + studentRival.getLoyaltyStudent();
+        if (studentGlassesThis > studentGlassesOther) {
+            System.out.println(this.getNameStudent() + " " + this.getSurnameStudent() + " лучший Пуффиндуец, чем " + studentRival.getNameStudent() + " " + studentRival.getSurnameStudent());
+        } else {
+            System.out.println(studentRival.getNameStudent() + " " + studentRival.getSurnameStudent() + " лучший Пуффиндуец, чем " + this.getNameStudent() + " " + this.getSurnameStudent());
+        }
+
+    }
 }
