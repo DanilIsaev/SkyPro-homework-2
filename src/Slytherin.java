@@ -46,4 +46,14 @@ public class Slytherin extends Hogwarts {
                 " власть = " + authorityStudent +
                 '}';
     }
+
+    public void tournamentStudent(Slytherin studentRival) {
+        int studentGlassesThis = this.getAuthorityStudent() + this.getCunningStudent() + this.getDeterminationStudent();
+        int studentGlassesOther = studentRival.getAuthorityStudent() + studentRival.getCunningStudent() + studentRival.getDeterminationStudent();
+        if (studentGlassesThis > studentGlassesOther) {
+            System.out.println(this.getNameStudent() + " " + this.getSurnameStudent() + " лучший Слизеринец, чем " + studentRival.getNameStudent() + " " + studentRival.getSurnameStudent());
+        } else {
+            System.out.println(studentRival.getNameStudent() + " " + studentRival.getSurnameStudent() + " лучший Слизеринец, чем " + this.getNameStudent() + " " + this.getSurnameStudent());
+        }
+    }
 }

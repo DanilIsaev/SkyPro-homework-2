@@ -46,6 +46,7 @@ public class Kogtevran extends Hogwarts {
                 " творчество = " + creationStudent +
                 '}';
     }
+
     public void tournamentStudent(Kogtevran studentRival) {
         int studentGlassesThis = this.getMindStudent() + this.getWitStudent() + this.getCreationStudent();
         int studentGlassesOther = studentRival.getMindStudent() + studentRival.getWitStudent() + studentRival.getCreationStudent();

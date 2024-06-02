@@ -17,9 +17,9 @@ public class Main {
                 new Slytherin("Грегори", "Гойл", 68, 56, 88, 77, 56)
         };
         Kogtevran[] studentKogtevran = {
-                new Kogtevran("Чжоу", "Чанг", 67, 56, 89,78,98),
-                new Kogtevran("Падма", "Патил", 78, 45, 56,90,50),
-                new Kogtevran("Маркус", "Белби", 90, 78, 87,45,60)
+                new Kogtevran("Чжоу", "Чанг", 67, 56, 89, 78, 98),
+                new Kogtevran("Падма", "Патил", 78, 45, 56, 90, 50),
+                new Kogtevran("Маркус", "Белби", 90, 78, 87, 45, 60)
 
         };
         for (int i = 0; i < studentGriffindor.length; i++) {
@@ -35,8 +35,10 @@ public class Main {
             System.out.println(studentKogtevran[i].toString());
         }
 
-        studentPuffenduy[1].tournamentStudent(studentGriffindor[1]);
+        studentPuffenduy[0].tournamentStudent(studentPuffenduy[1]);
         studentGriffindor[0].tournamentStudent(studentGriffindor[1]);
+        studentSlytherin[0].tournamentStudent(studentSlytherin[1]);
         studentKogtevran[0].tournamentStudent(studentKogtevran[1]);
+        studentKogtevran[0].tournamentStudent(studentSlytherin[1]);
     }
 }
